@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TODOs list</title>
-</head>
-<body>
-  <h1>TODOs List!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>TODOs list</title>
+  </head>
+  <body>
+    <header>
+      <!-- 
+        This page will have the h1 with color: red because we are declaring ./css/main.css file
+       -->
+       <h1>TODOs List!</h1>
+       <!-- 
+         This is a button that will redirect the user to another page
+        -->
+        <button id="button">
+          Redirect me to /add/index.html
+        </button>
+    
+        <button id="add-number">
+          Add random number
+        </button>
+    </header>
+
+    <div class="numbers-list">
+      <h2>Random numbers list</h2>
+      <ul id="numbers-ul"></ul>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
 </html>
