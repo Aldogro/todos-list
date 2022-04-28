@@ -1,11 +1,10 @@
 import { functionForExport } from './index.js'
 
 functionForExport()
-console.log(button)
 
-const button = document.querySelector('#button')
+const goHome = document.querySelector('#go-home')
 
 
-function takeMeHome () { window.location.href = '/' }
+function takeMeHome () { window.location.href = '/todos-list' }
 
-button.addEventListener('click', () => takeMeHome())
+goHome.addEventListener('click', () => takeMeHome())
